@@ -1,0 +1,73 @@
+[{
+    "year": "2018\/2019",
+    "name": "CS111",
+    "topic": "Introduction to computer science",
+    "Info": "",
+    "file": "..\/files\/handbook\/MTH111.pdf"
+}, {
+    "year": "2018\/2019",
+    "name": "MTH111",
+    "topic": "Elementary Algebra 1",
+    "Info": "",
+    "file": "..\/files\/handbook\/MTH111.pdf"
+}, {
+    "year": "2018\/2019",
+    "name": "CHM111",
+    "topic": "General Chemistry 1",
+    "Info": "(3 in 1 [gases, equilibrium, colligative properties])",
+    "file": "..\/files\/handbook\/CHM111 3.pdf"
+}, {
+    "year": "2018\/2019",
+    "name": "CHM111",
+    "topic": "General Chemistry 1",
+    "Info": "(Gases) Password: pantaleon",
+    "file": "..\/files\/handbook\/CHM111 G.pdf"
+}, {
+    "year": "2018\/2019",
+    "name": "CHM113",
+    "topic": "General Chemistry 1 Lab",
+    "Info": "",
+    "file": "..\/files\/MTH111.pdf"
+}, {
+    "year": "2018\/2019",
+    "name": "GNS111",
+    "topic": "Use Of English 1",
+    "Info": "(Handwritten)",
+    "file": "..\/files\/MTH111.pdf"
+}, {
+    "year": "2018\/2019",
+    "name": "MTH112",
+    "topic": "Elementary Calculus 1",
+    "Info": "",
+    "file": "..\/files\/handbook\/MTH112.pdf"
+}, {
+    "year": "2018\/2019",
+    "name": "PHY111",
+    "topic": "Intro To Mechanics & Properties Of Matter",
+    "Info": "(Handwritten)",
+    "file": "..\/files\/MTH111.pdf"
+}, {
+    "year": "2018\/2019",
+    "name": "PHY117",
+    "topic": "Basic Experimental Physics 1",
+    "Info": "",
+    "file": "..\/files\/MTH111.pdf"
+}, {
+    "year": "2018\/2019",
+    "name": "ST111",
+    "topic": "Intro To Prob. & Prob. Distribution",
+    "Info": "",
+    "file": "..\/files\/handbook\/probability 1.pdf"
+}, {
+    "year": "2017\/2018",
+    "name": "CS121",
+    "topic": "Introduction To Computer Science II",
+    "Info": "Lecture Note A",
+    "file": ".\/files\/handbook\/CS121.pdf"
+}, {
+    "year": "2017\/2018",
+    "name": "CS121",
+    "topic": "Programming With BASIC",
+    "Info": "Lecture Note B",
+    "file": ".\/files\/handbook\/CS121 Lecture Note B.pdf"
+}]

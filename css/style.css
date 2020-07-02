@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    
+}
+.navbar {
+    width: 100%;
+    border-radius: 0px;
+    box-shadow: 0px 1px 3px 0px rgba(182, 185, 185, 0.9);
+}
+.navbar-brand {
+    font-weight: 700;
+}
+#navbar-ul-link a {
+    font-weight: 600;
+}
+#navbar-ul-link i {
+    margin: 2px;
+    font-size: 15px;
+}
+#toggle {
+    position: absolute;
+    right: 20px;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    float: right;
+    transition: all 0.3s ease-out;
+    visibility: hidden;
+    opacity: 0;
+}
+#toggle .span{
+    height: 3px;
+    background: #000;
+    transition: all 0.3s ease-out;
+    backface-visibility: hidden;
+    margin: 5px;
+}
+
+#toggle.on #one{
+    transform: rotate(45deg) translateX(2px) translateY(4px);
+}
+#toggle.on #two {
+    opacity: 0;
+}
+#toggle.on #three{
+    transform: rotate(-45deg) translateX(8px) translateY(-10px);
+}
+#resize {
+    z-index: 1;
+    top: 73px;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s ease-out;
+    display: table;
+    box-shadow: 0px 1px 5px 0px rgba(124, 124, 124, 0.9);
+}
+#resize #menu {
+    height: 40px;
+    display: table-cell;
+    vertical-align: center;
+    padding: 0;
+    
+}
+#resize #menu li {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 50px;
+    font-weight: 200;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    border-bottom: 1px solid rgb(33, 117, 110);
+    border-top: 1px solid rgb(33, 117, 110);
+    background: rgb(244, 244, 245);
+}
+#resize #menu li a {
+    color: #000;
+    font-weight: 600;
+}
+#resize.active{
+    visibility: visible;
+    opacity: .99;
+}
+
+.main-body {
+    padding: 10px 45px 10px 45px;
+    background: rgba(252, 249, 249, 0.82);
+    width: 100%;
+    min-height: 86%;
+    position: relative;
+    
+}
+.main-body .alert {
+    box-shadow: 0px 1px 3px 0px rgba(182, 185, 185, 0.9);
+}
+.search {
+    width: 100%;
+}
+.contact .form-control {
+    outline: none;
+    border-bottom: 2px solid rgb(150, 149, 149);
+    font-weight: 400;
+    margin-bottom: 5px;
+    box-shadow: none;
+}
+.contact .form-control:focus {
+    border: 1px solid #999;
+    box-shadow: none;
+    border-bottom: 2px solid rgb(83, 81, 81);
+    font-weight: 400;
+}
+.contact label {
+    font-weight: 600;
+    font-family: 'Poppins';
+} 
+.contact textarea {
+    min-height: 100px;
+}
+.contact .btnsend {
+    font-weight: 700;
+    font-family: sans-serif;
+    width: 100%;
+}
+.btnfile {
+    padding: 5px 30px;
+    color: white;
+    cursor: pointer;
+    border-radius: 0;
+    font-weight: 600;
+    border: none;
+    margin: 0;
+}
+.filename {
+    margin-left: 30px;
+    color: #aaa;
+}
+footer {
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: #fff;
+    text-align: center;
+    font-weight: 600;
+    margin: 0 auto;
+    padding: 20px;
+}
+.input-group button {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    background: #fff;
+    border-color: rgb(163, 161, 161);
+    border-style: solid;
+    border-width: 1px 1px 1px 0px;
+}
+.input-group input {
+    border-color: rgb(163, 161, 161);
+    border-style: solid;
+    border-width: 1px 0 1px 1px;
+}
+.input-group input:focus  {
+    box-shadow: none;
+    border-color: rgb(163, 161, 161);
+    border-style: solid;
+    border-width: 1px 0 1px 1px;
+    
+}
+.input-group button:focus {
+    box-shadow: none;
+    border-color: rgb(163, 161, 161);
+    border-style: solid;
+    border-width: 1px 1px 1px 0px;
+}
+.fileInfo #fileInfo {
+    
+    width: 400px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 23.5%;
+    left: 20%;
+    margin-left: -60px;
+    transition: 1s;
+    visibility: hidden;
+    opacity: 0
+}
+.fileInfo #fileInfo::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent;
+}
+.fileInfo:hover #fileInfo,
+.fileInfo:focus #fileInfo {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+@media(max-width: 768px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .main-body {
+        padding: 5px 10px;
+    }
+    #toggle {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 6px;
+    }
+    
+    #menu a {
+        font-weight: 200;
+        font-size: 20px;
+    }
+    .navd #menu {
+        display: none;
+    }
+    
+    .filename {
+        margin-left: 10px;
+    }
+}
+
+@media(min-width: 768px) {
+    #resize{
+        visibility: hidden;
+    }
+}
+@media(max-width: 500px) {
+    tr td:first-child {
+        display: none;
+    }
+    .label {
+        font-size: 1.2rem;
+    }
+    .label i {
+        font-size: 1.2rem !important;
+    }
+    footer {
+        text-align: center;
+        font-weight: 600;
+        font-size: .8rem;
+    }
+    .all-list {
+        padding: 5px 10px;
+    }
+    .all-list h4 {
+        font-size: 1.3rem;
+    }
+    .all-list h6 {
+        font-size: .8rem;
+    }
+    .input-group input::placeholder {
+        font-size: 1rem;
+    }
+    .filename {
+        margin-left: 5px;
+    }
+    .btnfile {
+        padding: 5px 15px;
+    }
+    .fileInfo #fileInfo {
+    
+        width: 250px;
+        bottom: 20%;
+        left: 27%;
+
+    }
+    
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home | SoftBook Online</title>
+    <meta name="keywords" content="handout, softbook, school books, university book, college books, e-book, soft copy">
+    <meta name="description" content="SoftBook is a website aim at providing free and safe online handouts for college student">
+    <meta name="author" content="Bright K. Isaac">
+
+
+    <meta property="og:url" content="https://softbookdemo.000webhostapp.com/"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="SoftBook"/>
+	<meta property="og:image" content="../images/logo.jpg"/>
+	<meta property="fb:admins" content="" />
+	<meta property="og:site_name" content="Online SoftBook"/>
+	<meta property="og:description" content="SoftBook is a website aim at providing free and safe online handouts for college student">
+
+
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontawesome/css/all.css">
+    <script src="../css/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="navbar navbar-light navbar-expand-lg">
+            <div class="container heds navbar-header">
+                <a href="index.html" class="navbar-brand"><img src="../images/logo.png" style="width: 70px;
+                    height: 40px;
+                    margin: -10px 0 0 0;" alt="" srcset=""><span style="font-size: 1.8rem;">SoftBook</span></a>
+                <div class="navd" id="navbar-ul-link">
+                    <ul class="navbar-nav ml-auto" id="menu">
+                        <li class="nav-item">
+                            <a href="../index.html" class="nav-link"><i class="fas fa-home"></i>Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../donation.html" class="nav-link"><i class="fas fa-tag"></i>Donation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../contact.html" class="nav-link"><i class="fas fa-phone"></i>Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="toggle">
+                    <div class="span" id="one"></div>
+                    <div class="span" id="two"></div>
+                    <div class="span" id="three"></div>
+                </div>
+                <div id="resize">
+                        <ul id="menu">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="about.html" class="nav-link"><i class="fas fa-tag"></i> About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link"><i class="fas fa-phone"></i> Contact</a>
+                                </li>
+                            </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-body">
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <img style="width: 100%;height: 200px;" src="../images/logo.jpg" alt="" srcset="">
+            </div>
+            <div class="col-md-8">
+                <div class="content-info">
+                    <p><span><strong>Name:</strong> CS111</span></p>
+                </div>
+            </div>
+        </div>
+        
+        
+
+        <footer>
+            <div class="copyright">
+                    <p>&copy; Copyright 2019 SoftBook | Designed by <a href="about.html">Bright K. Isaac</a></p>
+            </div>
+        </footer>
+    </div>
+        
+        <script src="../js/jquery/jquery.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/new.js"></script>
+    <script>
+        $("#toggle").click(function() {
+    $(this).toggleClass('on');
+    $("#resize").toggleClass("active");
+});
+</script>
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact | Online SoftBook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="handout, softbook, school books, university book, college books, e-book, soft copy">
+    <meta name="description" content="SoftBook is a website aim at providing free and safe online handouts for college student">
+    <meta name="author" content="Bright K. Isaac">
+
+
+    <meta property="og:url" content="https://softbookdemo.000webhostapp.com/"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="SoftBook"/>
+	<meta property="og:image" content="./images/logo.jpg"/>
+	<meta property="fb:admins" content="" />
+	<meta property="og:site_name" content="Online SoftBook"/>
+	<meta property="og:description" content="SoftBook is a website aim at providing free and safe online handouts for college student">
+
+
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome/css/all.css">
+    <script src="css/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar navbar-light navbar-expand-lg">
+            <div class="container navbar-header">
+                <a href="index.html" class="navbar-brand"><img src="./images/logo.png" style="width: 70px;
+                    height: 40px;
+                    margin: -10px 0 0 0;" alt="" srcset=""><span style="font-size: 1.8rem;">SoftBook</span></a>
+                <div class="navd" id="navbar-ul-link">
+                    <ul class="navbar-nav ml-auto" id="menu">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link"><i class="fas fa-home"></i>Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="donation.html" class="nav-link"><i class="fas fa-tag"></i>About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link"><i class="fas fa-phone"></i>Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="toggle">
+                    <div class="span" id="one"></div>
+                    <div class="span" id="two"></div>
+                    <div class="span" id="three"></div>
+                </div>
+                <div id="resize">
+                        <ul id="menu">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="donation.html" class="nav-link"><i class="fas fa-tag"></i> About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link"><i class="fas fa-phone"></i> Contact</a>
+                                </li>
+                            </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-body">
+        <div class="container contact mb-5">
+            <h3 class="head text-center" style="margin: 30px 0;">CONTACT ME</h3>
+            <div class="contact-via">
+                <table class="table table-striped" style="width: 100%;">
+                    <tr class="">
+                        <td style="font-weight: 700;font-size: 1.4rem;">VIA</td>
+                        <td style="font-weight: 400;font-size: 1.4rem;color: rgb(63, 236, 141);"><i class="fab fa-whatsapp"></i></td>
+                        <td style="color: #000; font-weight: 400;font-size: 1.2rem;">+234 (0)7016505681</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="font-weight: 400;font-size: 1.4rem;color: rgb(4, 0, 255);"><i class="fab fa-facebook"></i></td>
+                        <td style="color: #000; font-weight: 500;font-size: 1.2rem;"><a  target="_blank" href="https://web.facebook.com/profile.php?id=100010277356142">www.facebook.com</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="font-weight: 400;font-size: 1.4rem; color: rgb(83, 221, 240)"><i class="fab fa-twitter"></i></td>
+                        <td style="color: #000; font-weight: 500;font-size: 1.2rem;"><a href="#" onclick="alert('Not Yet Developed, Hold On.');">www.twitter.com</a></td>
+                    </tr>
+                </table>
+            </div>
+            <h4 class="text-center" style="margin: 30px 0;font-size: 1.5rem;">OR</h4>
+            <h5 class="text-center" style="margin: 30px 0;">Contact Via Email for FeedBack </h5>
+            <form action="mail_handler.php" name="form" class="messageM" enctype="multipart/form-data" method="post">
+                <div class="form-group">
+                    <label for="name">Enter Your Full Name</label>
+                    <input type="text" id="name" required name="name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="email">Enter Email Address</label>
+                    <input type="email" required name="email" id="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control textarea" required name="message" id="message"></textarea>
+                </div>
+                <div class="successfully" hidden name="success">
+                    <div class="alert alert-success"><p>
+                        Your Message Was Successfully Sent! Thank You.  ;)
+                    </p></div>
+                </div>
+                <div class="failed" hidden name="fail">
+                    <div class="alert alert-danger"><p>
+                        Something Went Wrong! Your Message Wasn't Sent, Please Try Again. :(
+                    </p></div>
+                </div>
+                <div class="form-group text-center">
+                    <button type="submit" name="submit" class="btn btnsend btn-secondary btnclick">SEND</button>
+                </div>
+                
+            </form>
+            <div class="donate">
+                <h4 class="text-center mb-2 mt-5">You Can Donate Your File Here</h4>
+            </div>
+            <div class="alert alert-info">
+                <p>Please The Name Of The File(Handout) Should Be The Same With The File Name Eg If the File Name Is (MTH111) Then The File Should Be (MTH111.pdf) Else There Might Be An Error. Thank You</p>
+            </div>
+            <form action="./upload.php" class="donating-form" enctype="multipart/form-data" method="post">
+                <div class="form-group">
+                    <label for="nameoffile">Name Of File</label>
+                    <input class="form-control" required name="nameoffile" placeholder="Enter name of file eg CS111" type="text" >
+                </div>
+                <div class="form-group">
+                    <label for="year">Year/Semester Of File</label>
+                    <input type="text" name="year" placeholder="Eg 2018/2019" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="year">Topic</label>
+                    <input type="text" name="topic" placeholder="Enter The Topic For The Handout" class="form-control">
+                </div>
+                <div>
+                    <label for="file">Donate Handout </label> <br>
+                    <input type="file" accept=".pdf, .jpg, .doc, .docx, .png" name="file" id="file" hidden>
+                    <input type="button" id="btnfile" class="btnfile btn-secondary" value="Choose File">
+                    <span id="filename" class="filename">No Files Chosen</span>
+                </div>
+                <div class="form-group fileInfo mt-3">
+                    <label for="upload_message">File Info</label>
+                    <!-- <div style="font-size: .8rem; display: none;" id="fileInfo" class="alert alert-info"><p >File Info Should include General topic and password if there is one, all seperated by coma(,)</p></div> -->
+                    <textarea name="upload_message" class="form-control" id="upload_message" placeholder="Enter the File Info"></textarea> <span id="fileInfo">File Info Should include Subject and password if there is one, all seperated by a line(|)</span>
+                </div>
+                <input type="submit" name="upload" class="btn btn-secondary btnsend">
+            </form>
+        </div>
+        <footer>
+                <div class="copyright">
+                        <p>&copy; Copyright 2019 SoftBook | Designed by <a href="about.html">Bright K. Isaac</a></p>
+                </div>
+            </footer>
+    </div>
+
+    
+    <script type="text/javascript" >
+        const inputFile = document.querySelector("#file");
+        const btnFile = document.querySelector("#btnfile");
+        const fileName = document.querySelector("#filename");
+
+        btnFile.addEventListener('click', function() {
+            inputFile.click();
+        });
+        inputFile.addEventListener('change', function() {
+            if(inputFile.value) {
+                fileName.innerHTML = inputFile.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/)[1];
+            }
+            else {
+                inputFile.innerHTML = "No Files Chosen";
+            }
+        });
+    </script>
+    <script src="./js/main.js"></script>
+    <script src="./js/jquery/jquery.js"></script>
+    <script>
+        $("#toggle").click(function() {
+    $(this).toggleClass('on');
+    $("#resize").toggleClass("active");
+});
+
+    </script>
+</body>
+</html>
